@@ -13,8 +13,8 @@ Tab:AddToggle({
 	Name = "Auto Get Poltergeist",
 	Default = true,
 	Callback = function(Value)
-		_G.AutoSlapAll = Value
-while _G.AutoSlapAll do
+		_G.Aura = Value
+while _G.Aura do
 for i,v in pairs(workspace.Enemies:GetChildren()) do
 if v:FindFirstChild("HumanoidRootPart") then
 game:GetService("ReplicatedStorage").Remotes.GeneralHit:FireServer(v:FindFirstChild("HumanoidRootPart"))
