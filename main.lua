@@ -18,6 +18,9 @@ while _G.AutoSlapAll do
 for i,v in pairs(workspace.Enemies:GetChildren()) do
 if v:FindFirstChild("HumanoidRootPart") then
 game:GetService("ReplicatedStorage").Remotes.GeneralHit:FireServer(v:FindFirstChild("HumanoidRootPart"))
+if game:GetService("BadgeService"):UserHasBadgeAsync(game.Players.LocalPlayer.UserId, 868768988664040)
+game:GetService("TeleportService"):Teleport(6403373529)
+end							
 end
 end
 task.wait(0.15)
